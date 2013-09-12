@@ -1,0 +1,79 @@
+#To Config Git
+git config --global user.name "Ritesh Tandon"
+git config --global user.email riteshtandon23@gmail.com
+
+git config --list
+
+#to get the list of config settings
+
+md gittest
+
+cd gittest
+
+#This would create a git Repository on local server.
+git init .
+
+#Now get the existing project from github.com into your local server respository.
+git clone --recursive git@github.com:riteshtandon23/gittest (i.e The SSH Path)
+#recursive is used so that any changes made to the branches are also added.
+
+#Incase facing error you need to generate a new pass key
+ssh-keygen -t rsa -C "youremail@domain.com"
+
+#Then run the clone command again
+
+git branch 
+#To list the active branch where our current pointer is pointing
+
+#This would create a snapshot of the current directory structure and files.
+git add .
+
+#This commands tells that the snapshot is ready to be commited.
+git commit -m "First commit"
+
+git pull 
+#This is used so that incase some other person is working then the files would be updated here.
+
+git push
+
+#To pull the code from the commit
+git reset --hard 18dc33sdjflkasdjflkasdj(i.e the SHA of the commit which can be found on the website)
+
+#To create a branch
+git branch "branchname"
+
+#To list all branches
+git branch
+
+#Create a new folder in the main directory with name of the branch
+md ritesh
+
+cd ritesh
+
+
+#Create a branch on Github.com interface. with the name ritesh.
+git clone -b ritesh --recursive git@github.com:riteshtandon23/gittest.git
+
+#Go inside the branch folder and then the repository folder
+
+git branch
+
+git add .
+
+git push origin ritesh
+
+git commit -m "First Commit On Branch"
+
+git push origin ritesh
+
+#The above would update the git branches
+
+git checkout ritesh
+#checkout from the branch ritesh
+
+git branch -d ritesh
+
+#Would delete the branch
+
+
+
